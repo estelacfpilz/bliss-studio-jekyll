@@ -5,12 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Gridlex -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+
+     <!-- Add Google Fonts Here  -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet"> 
+ 
+     <!-- My custom stylesheet -->
     <link rel="stylesheet" type="text/css" href="/style.css" />
     <title>{{page.title}}</title>
 </head>
 
 <body>
     {{content}}
+
+        <!-- Footer -->
+        <footer class="grid-center padded text-featured">
+            <div class="col-12">
+                <h2 class="center">Find us. <span class="sm-block">Contact us.</span></h2>
+            </div>
+            <div class="col-4_md-5_xs-12-middle text-lato">
+                <p class="margin-b-0 weight-bold">Zen Studio.</p>
+                <p>222 John Smith Ave, <br> Victoria, Australia</p>
+                <p><em>Take the second left after the strange looking sign.</em> </p>
+                <p class="weight-bold"><a href="mailto:zenstudio@gmail.com">Email: zenstudio@gmail.com</a></p>
+                <p class="weight-bold"><a href="tel:045555555">Phone: 04 555 5555</a></p>
+            </div>
+            <div class="col-6_md-7_xs-12 bg-image bg-map tall-40"> </div>
+            <div class="col-12 center text-lato padded-1">
+                <p>Copyright 2021</p>
+            </div>
+        </footer>
 </body>
 
 </html>

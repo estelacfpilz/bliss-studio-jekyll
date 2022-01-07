@@ -3,3 +3,140 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+img { max-width: 100%; }
+
+/* ----------- Temporary styles --- */
+/* div {border: 1px solid lightblue;} */
+
+/* --- Utility classes --- */
+.tall-30 { min-height: 30vh; }
+.tall-40 { min-height: 40vh; }
+.tall-50 { min-height: 50vh; }
+.tall-60 { min-height: 60vh; }
+.tall-70 { min-height: 70vh; }
+.tall-80 { min-height: 80vh; }
+.tall-90 { min-height: 90vh; }
+
+.padded    { padding: 5%;    }
+
+.padded-1,
+.grid.padded-1 { padding: 1rem; }
+
+.padded-2,
+.grid.padded-2 { padding: 2rem; }
+
+.margin-b-0 { margin-bottom: 0; }
+
+.bg-light    { background-color: #F8F6F4; }
+.bg-featured { background-color: #018ca2; }
+
+.text-featured { color: #f59186;} 
+.weight-bold { font-weight: 700;}
+
+.left   { text-align: left; }
+.center { text-align: center; }
+.right  { text-align: right; }
+
+/* --- Typography --- */
+body { 
+    font-family: 'Baskervville', serif;
+    color: rgb(65,60,60);
+}
+
+a {color:inherit;}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Didot', serif;
+    line-height: 1; 
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+
+h1 {font-size: 15vw;}
+h2 { font-size: 4rem; }
+h3 { font-size: 3rem; }
+
+p {
+    line-height: 1.4; 
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+ul { margin-left: 1rem; }
+li { padding-left: .5rem;}
+
+h1:last-child, 
+h2:last-child, 
+h3:last-child, 
+h4:last-child, 
+h5:last-child, 
+h6:last-child, 
+p:last-child {
+    margin-bottom: 0;
+}
+
+.text-lato {
+    font-family: 'Lato', sans-serif; 
+    font-weight: 300;
+    color: #e37165;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+/* --- Images --- */
+.bg-image {
+    background-color: #f8F6F4;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-stone {background-image: url(./images/stone.png);}
+
+.bg-leaves {
+    background-image: url(./images/zen-studio-1.jpg);
+    background-position: 50% 30%;
+}
+
+.bg-map {background-image: url(./images/light-colored-map.png);}
+
+.bg-studio {background-image: url(./images/zen-studio-3.jpg);}
+
+.shape-teardrop {
+    border-radius: 20rem;
+    border-bottom-right-radius: 0;
+}
+.shape-dome {
+    border-radius: 20rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* --- Buttons --- */
+.button {
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    border: 1px solid #f59186;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+/* Gridlex Media Queries 
+  @media (max-width: 36em)  Max 576px 	_xs-*
+  @media (max-width: 48em)  Max 768px 	_sm-*
+  @media (max-width: 64em)  Max 1024px 	_md-*
+  @media (max-width: 80em)  Max 1280px 	_lg-*
+*/
+
+/* Gridlex SM query - Max 768px - _sm-* */
+@media (max-width: 48em) {
+    .bg-leaves { background-image: url(./images/leaves-light.png); }
+    .sm-block { display: block; }
+    h2 { font-size: 2.5rem; }
+    h3 { font-size: 1.8rem; }
+    .center-sm {text-align: center;}
+}	
