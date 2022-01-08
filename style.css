@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+[class*=col-], [class*=col_], [class~=col] { padding: 0;}
+[class*=grid-], [class*=grid_], [class~=grid] { margin: 0;}
+
 img { max-width: 100%; }
 
 /* --- Utility classes --- */
@@ -46,9 +49,13 @@ img { max-width: 100%; }
 .center { text-align: center; }
 .right  { text-align: right; }
 
+.landscape-wide { padding-bottom: 40%;}
 .landscape { padding-bottom: 65%;}
-.portrait { padding-bottom: 125%;}
 .square   { padding-bottom: 100%;}
+.portrait { padding-bottom: 125%;}
+.portrait-tall { padding-bottom: 140%;}
+
+
 
 /* --- Typography --- */
 body { 
@@ -96,6 +103,22 @@ p:last-child {
     color: #e37165;
 }
 
+/* Header and Footer Styles */
+.header-nav h1 { font-size: 4rem;}
+
+nav a {
+    font-family: 'Lato', sans-serif;
+    padding: 0 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(75, 60, 60);
+}
+
+nav a:hover {
+    color: #f59186;
+    transition: 0.2s;
+}
+
 footer a {
     text-decoration: none;
 }
@@ -103,9 +126,9 @@ footer a {
 /* --- Images --- */
 .bg-image {
     background-color: #f8F6F4;
-    background-position: center;
+    background-size: cover; 
+    background-position: center; 
     background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .bg-stone {background-image: url(./images/stone.png);}
@@ -163,6 +186,11 @@ a.banner-link:hover {
     color: #f59186;
     transition: 0.2s;
 }
+
+/* --- Gallery styles --- */
+.gallery [class*="col-"]  {
+    padding: 0.5%;
+  }
 
 /* Gridlex MD query - Max 1024x - _md-* */
 @media (max-width: 64em) {
