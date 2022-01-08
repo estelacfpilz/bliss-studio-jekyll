@@ -176,5 +176,9 @@ a.banner-link:hover {
     h2 { font-size: 2.5rem; }
     h3 { font-size: 1.8rem; }
     .center-sm {text-align: center;}
-    .md-image { padding: 5% 15%;}
 }	
+
+/* Gridlex SM query - Max 768px - _sm-* */
+@media (max-width:36em) {
+    .sm-image { padding: 5% 15%;}
+}
