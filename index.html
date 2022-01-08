@@ -1,11 +1,31 @@
 ---
 layout: default
-title: Homepage
+title: Bliss Studio - Yoga to find peace and connection
+
+features:
+    - heading: Discover Yin
+      image: https://source.unsplash.com/KdLKorWtFk8
+      description: Yin Yoga is a practice lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nesciunt culpa qui possimus amet at vero laborum ab, soluta eum ducimus, tempora rerum officiis mollitia consequuntur consectetur eius inventore tenetur.
+    - heading: Join a Community
+      image: https://source.unsplash.com/GaprWyIw66o
+      description: We are not just a yoga studio. We are a community of different people who share the passion for connection  with our inner world, with each other, with nature and with the world.
+    - heading: Find Support
+      image: https://source.unsplash.com/6CLBoiWuzSU
+      description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam sit ut deleniti eligendi ea repudiandae veritatis quaerat, quas aliquid adipisci magnam amet blanditiis. Assumenda doloribus beatae iure recusandae repellendus a.
+
+team:
+    - teacher: Liz
+      bio: Specializes in Yin Yoga and Breathwork. Probably cuddling dogs and on hiking trails in her free time.
+      image: https://source.unsplash.com/4gcqRf3-f2I
+    - teacher: Fer
+      bio: Meditation guide and Yin Yoga teacher. Probably eating spicy tacos and swimming on the weekends.
+      image: https://source.unsplash.com/t1NEMSm1rgI
+
 ---
 
-    <header class="grid bg-image bg-stone tall-90 padded center">
+    <header class="grid bg-image bg-stone tall-90 md-tall-30 padded center">
         <div class="col-12-middle">
-            <h1 class="text-featured">zen.studio</h1>
+            <h1 class="editable text-featured">bliss.studio</h1>
         </div>
     </header>
 
@@ -15,34 +35,75 @@ title: Homepage
             <img src="/images/zen-studio-2.jpg" alt="zen studio" class="shape-teardrop">
         </div>
         <div class="col-7_md-6_xs-12-middle padded-2">
-            <h3 class="text-featured">Welcome home.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dignissimos pariatur officia beatae ratione nemo minima eligendi enim, error magni unde tenetur quos distinctio sapiente repudiandae dolorum corporis, vitae quas.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo officia dolorum fugit aliquam, ad totam accusantium porro odio. Assumenda repellat aperiam ipsam quos saepe totam asperiores error, ducimus tenetur recusandae.</p>
-            <a href="#" class="button">Book a session</a>
+            <h2 class="editable text-featured">Find bliss.</h2>
+            <p class="editable">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dignissimos pariatur officia beatae ratione nemo minima eligendi enim, error magni unde tenetur quos distinctio sapiente repudiandae dolorum corporis, vitae quas.</p>
+            <p class="editable">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo officia dolorum fugit aliquam, ad totam accusantium porro odio. Assumenda repellat aperiam ipsam quos saepe totam asperiores error, ducimus tenetur recusandae.</p>
+            <a href="#" class="editable button">Book a session</a>
         </div>
     </section>
 
     <!-- Breathe banner -->
     <section class="grid bg-image bg-leaves tall-50 padded">
         <div class="col-12-middle right center-sm">
-            <h3>Don't forget to breathe.</h3>
+            <h4 class="editable">Don't forget to breathe.</h4>
         </div>
     </section>
 
     <!-- Studio section -->
     <section class="grid-center bg-light padded">
         <div class="col-5_md-6_sm-12-middle padded-2">
-            <h2 class="text-featured">Our studio.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dignissimos pariatur officia beatae ratione nemo minima eligendi enim, error magni unde tenetur quos distinctio sapiente repudiandae dolorum corporis, vitae quas.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo officia dolorum fugit aliquam, ad totam accusantium porro odio. Assumenda repellat aperiam ipsam quos saepe totam asperiores error, ducimus tenetur recusandae.</p>
-            <ul>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <h2 class="editable text-featured">Our studio.</h2>
+            <p class="editable">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dignissimos pariatur officia beatae ratione nemo minima eligendi enim, error magni unde tenetur quos distinctio sapiente repudiandae dolorum corporis, vitae quas.</p>
+            <p class="editable">Nemo officia dolorum fugit aliquam, ad totam accusantium porro odio. Assumenda repellat aperiam ipsam quos saepe totam asperiores error, ducimus tenetur recusandae.</p>
+            <ul class="editable">
+                <li class="editable">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li class="editable">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li class="editable">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
             </ul>
+            <a href="#" class="editable button">Get directions</a>
         </div>
         <div class="col-4_md-6_sm-12 grid padded-1">
             <div class="col-12 bg-image bg-studio shape-dome tall-70"></div>
         </div>
     </section>
+
+    <!-- Yoga type section -->
+    <section class="grid-center padded bg-featured">
+        
+        {% for item in page.features %}
+        
+        <div class="col-4_md-12 padded-2">
+            <div class="landscape bg-image shape-roundtopright" style="background-image: url({{item.image}});"></div>
+            <h3 class="padded-t">{{item.heading}}</h3>
+            <p>{{item.description}}</p>
+        </div>
+        
+        {% endfor %}
+
+    </section>
+
+    <!-- Meet the team -->
+    <section class="bg-light padded grid-center">
+        <div class="col-12 center">
+            <h3 class="editable text-featured padded-1">Meet your guides</h3>
+        </div>
+
+        {% for item in page.team %}
+        <div class="col-5_md-6_sm-12 padded-2 grid-center">
+            <div class="col-8">
+                <div class="team-photo square bg-image shape-circle" style="background-image: url({{item.image}});"></div>
+            </div>
+            
+            <h5 class="col-10 padded-t center"> about <em>{{item.teacher}}</em> </h5>
+            <p class="col-10">{{item.bio}} </p>
+        </div>
+        {% endfor %}
+
+    </section>
+
+    <!-- Book a session banner -->
+        <section class="grid bg-image bg-leaves tall-50 padded">
+            <div class="col-12-middle right center-sm">
+                <a href="#" class="editable banner-link">Book a session.</a>
+            </div>
+        </section>

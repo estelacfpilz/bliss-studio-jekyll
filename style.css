@@ -6,9 +6,6 @@
 
 img { max-width: 100%; }
 
-/* ----------- Temporary styles --- */
-/* div {border: 1px solid lightblue;} */
-
 /* --- Utility classes --- */
 .tall-30 { min-height: 30vh; }
 .tall-40 { min-height: 40vh; }
@@ -19,6 +16,7 @@ img { max-width: 100%; }
 .tall-90 { min-height: 90vh; }
 
 .padded    { padding: 5%;    }
+.padded-lg { padding: 10%;    }
 
 .padded-1,
 .grid.padded-1 { padding: 1rem; }
@@ -26,10 +24,20 @@ img { max-width: 100%; }
 .padded-2,
 .grid.padded-2 { padding: 2rem; }
 
+.padded-t  { padding-top: 5%; }
+.padded-b  { padding-bottom: 5%; }
+.padded-l  { padding-left: 5%; }
+.padded-r  { padding-bottom: 5%; }
+
+.padded-t-1  { padding-top: 1rem; }
+.padded-b-1  { padding-bottom: 1rem; }
+.padded-l-1  { padding-left: 1rem; }
+.padded-r-1  { padding-bottom: 1rem; }
+
 .margin-b-0 { margin-bottom: 0; }
 
 .bg-light    { background-color: #F8F6F4; }
-.bg-featured { background-color: #018ca2; }
+.bg-featured { background-color: #efdcd9;}
 
 .text-featured { color: #f59186;} 
 .weight-bold { font-weight: 700;}
@@ -37,6 +45,10 @@ img { max-width: 100%; }
 .left   { text-align: left; }
 .center { text-align: center; }
 .right  { text-align: right; }
+
+.landscape { padding-bottom: 65%;}
+.portrait { padding-bottom: 125%;}
+.square   { padding-bottom: 100%;}
 
 /* --- Typography --- */
 body { 
@@ -55,7 +67,9 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {font-size: 15vw;}
 h2 { font-size: 4rem; }
-h3 { font-size: 3rem; }
+h3 { font-size: 2rem; }
+h4 { font-size: 3rem; }
+h5 { font-size: 1.6rem; }
 
 p {
     line-height: 1.4; 
@@ -115,6 +129,15 @@ footer a {
     border-bottom-left-radius: 0;
 }
 
+.shape-roundtopright { border-radius: 0 4rem 0 0; }
+
+.shape-circle { border-radius: 50%; }
+
+.team-photo { 
+    max-height: 200px;
+    display: block;
+}
+
 /* --- Buttons --- */
 .button {
     display: inline-block;
@@ -125,12 +148,16 @@ footer a {
     margin-top: 1rem;
 }
 
-/* Gridlex Media Queries 
-  @media (max-width: 36em)  Max 576px 	_xs-*
-  @media (max-width: 48em)  Max 768px 	_sm-*
-  @media (max-width: 64em)  Max 1024px 	_md-*
-  @media (max-width: 80em)  Max 1280px 	_lg-*
-*/
+.banner-link {
+    text-decoration: none;
+    border-bottom: 1px solid;
+    font-size: 3rem;
+}
+
+/* Gridlex MD query - Max 1024x - _md-* */
+@media (max-width: 64em) {
+    .md-tall-30 { min-height: 30vh; }
+}
 
 /* Gridlex SM query - Max 768px - _sm-* */
 @media (max-width: 48em) {
