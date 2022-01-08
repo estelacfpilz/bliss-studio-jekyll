@@ -23,7 +23,7 @@ team:
 
 ---
 
-    <header class="grid bg-image bg-stone tall-90 md-tall-30 padded center">
+    <header class="grid bg-image bg-stone tall-90 md-tall-40 padded center">
         <div class="col-12-middle">
             <h1 class="editable text-featured">bliss.studio</h1>
         </div>
@@ -31,8 +31,8 @@ team:
 
     <!-- Intro section -->
     <section class="grid-center bg-light padded">
-        <div class="col-4_md-6_xs-12-middle padded">
-            <img src="/images/zen-studio-2.jpg" alt="zen studio" class="shape-teardrop">
+        <div class="col-4_md-6_xs-12-middle padded md-image">
+            <img src="/images/zen-studio-2.jpg" alt="zen studio" class="shape-teardrop" data-aos="fade-in">
         </div>
         <div class="col-7_md-6_xs-12-middle padded-2">
             <h2 class="editable text-featured">Find bliss.</h2>
@@ -45,7 +45,7 @@ team:
     <!-- Breathe banner -->
     <section class="grid bg-image bg-leaves tall-50 padded">
         <div class="col-12-middle right center-sm">
-            <h4 class="editable">Don't forget to breathe.</h4>
+            <h4 class="editable" data-aos="fade-in">Disconnect to reconnect.</h4>
         </div>
     </section>
 
@@ -63,7 +63,7 @@ team:
             <a href="#" class="editable button">Get directions</a>
         </div>
         <div class="col-4_md-6_sm-12 grid padded-1">
-            <div class="col-12 bg-image bg-studio shape-dome tall-70"></div>
+            <div class="col-12 bg-image bg-studio shape-dome tall-70" data-aos="fade-in"></div>
         </div>
     </section>
 
@@ -73,7 +73,7 @@ team:
         {% for item in page.features %}
         
         <div class="col-4_md-12 padded-2">
-            <div class="landscape bg-image shape-roundtopright" style="background-image: url({{item.image}});"></div>
+            <div class="landscape bg-image shape-roundtopright" style="background-image: url({{item.image}});" data-aos="fade-in"></div>
             <h3 class="padded-t">{{item.heading}}</h3>
             <p>{{item.description}}</p>
         </div>
@@ -91,7 +91,7 @@ team:
         {% for item in page.team %}
         <div class="col-5_md-6_sm-12 padded-2 grid-center">
             <div class="col-8">
-                <div class="team-photo square bg-image shape-circle" style="background-image: url({{item.image}});"></div>
+                <div class="team-photo square bg-image shape-circle" style="background-image: url({{item.image}});" data-aos="fade-in"></div>
             </div>
             
             <h5 class="col-10 padded-t center"> about <em>{{item.teacher}}</em> </h5>
@@ -104,6 +104,6 @@ team:
     <!-- Book a session banner -->
         <section class="grid bg-image bg-leaves tall-50 padded">
             <div class="col-12-middle right center-sm">
-                <a href="#" class="editable banner-link">Book a session.</a>
+                <a href="#" class="editable banner-link" data-aos="fade-in">Book a session.</a>
             </div>
         </section>
