@@ -1,12 +1,9 @@
-
-design: 
-  dark-text_color: 'rgb(65,60,60)'
-  medium-text_color: 'rgb(75,60,60)'
-  light-text_color: '#F8F6F4'
+design:
+  dark-text_color: '#413c3c'
+  medium-text_color: '#4b3c3c'
+  light-text_color: '#f8f6f4'
   featured-text_color: '#f59186'
-  featured-text-darker_color: '#e37165'
+  featured-text-darker_color: '#9b2e23'
   light_color: '#efdcd9'
-  v-light_color: '#F8F6F4'
+  v-light_color: '#f8f6f4'
   featured_color: '#f59186'
-
-
