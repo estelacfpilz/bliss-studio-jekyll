@@ -1,0 +1,12 @@
+
+design: 
+  dark-text_color: 'rgb(65,60,60)'
+  medium-text_color: 'rgb(75,60,60)'
+  light-text_color: '#F8F6F4'
+  featured-text_color: '#f59186'
+  featured-text-darker_color: '#e37165'
+  light_color: '#efdcd9'
+  v-light_color: '#F8F6F4'
+  featured_color: '#f59186'
+
+
